@@ -1,0 +1,412 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+a{
+    text-decoration: none; 
+    color: black;
+    cursor: pointer;
+}
+.bg-danger,.btn-danger{
+    background-color:  #d84e55 !important;
+}
+.goto{
+    position: fixed;
+    right: 120px;
+    bottom: 40px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 12px;
+    z-index: 10;
+    border: 1px solid black;
+}
+.hero{
+    margin-top: 100px;
+    height: 500px;
+    width: 100vw;
+    background: url('../img/img04.png') no-repeat;
+    background-size: cover;
+  
+}
+#floatingInput1{
+    border-radius: 35px 0px 0px 35px;
+}
+nav{
+    z-index: 5;
+}
+.b-dark{
+   
+    padding: 10px;
+    border-radius: 12px;
+}
+.b-dark:hover{
+    background-color: rgb(221, 219, 219);
+}
+.form{
+    width: 100%;
+    height: 105px;
+    background-color:white;
+    display: flex;
+    border-radius:30px ;
+    align-items: center;
+
+}
+.form img ,.form i{
+    width: 40px;
+    font-size: 26px;
+    margin-left: 25px;
+    color: rgb(158, 156, 156);
+
+    
+}
+.rounded-50{
+    border-radius: 50%;
+}
+
+a:hover{
+    color: initial !important;
+}
+.white:hover{
+    color: white !important;
+}
+
+.form input{
+    padding: 30px 15px;
+    width: 200px;
+    font-size: 23px;
+    border: none;
+
+    border-right: 1px solid rgb(189, 188, 188);
+    
+}
+.form input:focus{
+    outline: none;
+}
+.formfloat{
+    position: relative;
+}
+.arr{
+    position: absolute;
+    cursor: pointer;
+    left: -70%;
+    background-color: white;
+   font-size: 20px !important;
+    border: 1px solid rgb(200, 197, 197);
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#busbtn{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    border-radius: 0px 30px 30px 0px;
+    font-weight: bold;
+    font-size: 20px;
+}
+#busbtn:focus{
+    outline: none;
+}
+.slider{
+    height: 250px;
+
+}
+.heroslide{
+    top: -20%;
+    width: 100%;
+    height: 300px;
+    padding: 0px 20px;
+    border-radius: 35px;
+    box-shadow: 0px 0px 5px rgb(186, 182, 182);
+}
+.heroslide1{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 35px;
+    
+}
+.slider1{
+    margin-top: 70px;
+    height: 460px;
+   
+}
+.cards{
+ width: 100%;
+ 
+}
+.card11{
+    width: 330px !important;
+    padding: 12px;
+    color: white;
+    border-radius: 12px;
+    margin: 0px 20px;
+    cursor: pointer;
+}
+.slick-arrow{
+    background-color: rgba(0, 0, 0, 0.171) !important;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    z-index: 1;
+}
+.slick-prev {
+    left: -60px;
+}
+.slick-arrow:hover{
+    background-color: rgba(0, 0, 0, 0.485) !important ;
+}
+
+.card11 h6{
+        font-weight: bold;
+}
+.sponsher{
+    height: 100px;
+}
+.sponshertxt{
+    height: 20px !important;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.sponsher img{
+    height: 100%;
+}
+.bus{
+    width: 60px;
+    margin: 5px auto;
+    text-align: center;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.11);
+}
+.firstcpn{
+    border: 1px dashed white;
+}
+.copy{
+    font-size: 23px;
+}
+.rounded-more{
+    border-radius: 12px !important;
+}
+.govpara{
+    font-size: 15px;
+    background-color: rgb(237, 234, 234);
+}
+.bigtxt{
+    font-size: 42px;
+}
+.bigtxt span{
+    font-weight: bold;
+}
+.trainbox{
+    height: 590px;
+    margin-bottom: 50px;
+    /* border: 1px solid red; */
+}
+.trainimg{
+    /* overflow: hidden; */
+    width: 50%;
+    height: 100%;
+    background: url('../img/img35.svg') no-repeat left bottom ;
+    background-size: cover;
+
+}
+.app{
+    height: 400px;
+    background: url('../img/img37.svg') no-repeat center center / cover;
+    border-radius: 32px;
+}
+.tick{
+    width: 25px ;
+    height: 25px;
+}
+.playstore{
+    width: 40%;
+}
+.qr{
+    width: 20%;
+}
+.qr h4{
+    text-align: left !important;
+}
+.redbuslabel{
+    height: 500px;
+    background: url('../img/img42.svg') top left;
+    background-size: contain;
+    
+    border-radius: 32px;
+    margin: 150px;
+}
+
+.labelright{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(35, 48, 88);
+    width: 500px;
+    color: white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 32px;
+    font-size: 43px;
+}
+.labelright p{
+    font-size: 20px !important;
+}
+
+.contname{
+    cursor: pointer;
+}
+.contname:hover h3{
+    background-color: rgb(226, 225, 225);
+}
+.w-75{
+    width: 85vw !important;
+}
+.booknow{
+    background: url(../img/img49.webp);
+    background-size: contain;
+}
+.footer,.accordion-item{
+   color: #3e3e52;
+   background-color: #f7f7f7 !important;
+}
+.footer_seo_link{
+    border-right: 1px solid black;
+    padding: 0px 10px;
+}
+.accordion-button{
+    background-color: #f7f7f7 !important;
+    color: black;
+    padding: 40px;
+}
+
+.promo-txt{
+    margin-left: 30px;
+    width: 250px;
+}
+
+
+/* train section start */
+.navbar1{
+    width: 101vw;
+     left: 0;
+     position: fixed;
+     z-index: 10;
+     top: 0;
+     left: 0;
+ }
+.trainback{
+    background:url('../img/train/img04.png') no-repeat ;
+    background-size: cover;
+    height: 600px;
+    width: 100vw;
+    margin-top: 68px;
+    border-radius: 0px 0px 60px 60px;
+    overflow: hidden;
+}
+.headtrain{
+    font-size: 50px;
+    font-weight: bold;
+}
+.overlay1{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.716);
+    padding: 20px 100px;
+    color: white;
+}
+.over1{
+    background-color: rgba(130, 128, 128, 0.695);
+    border-radius: 53px;
+    margin-top: 30px; 
+    padding: 50px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.overlay1 a{
+    color: rgb(136, 136, 243);
+    text-decoration: underline;
+    margin-right: 10px;
+}
+.text-light:hover{
+    color: white !important;
+}
+.trainpara{
+    font-size: 10px;
+}
+.trainbtn{
+    width: 200px;
+}
+.cancellation{
+    width: 250px !important;
+    padding: 10px;
+    text-align: left;
+}
+#checkbox{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 30px !important;
+    background-color: #d84e55;
+    padding: 12px !important;
+}
+.offerfor{
+    background-color: #f8f4f4;
+    box-shadow: 0 4px 4px rgba(0,0,0,.25);
+}
+.text-left{
+    text-align: left !important;
+}
+.train-footer{
+    background-color: #f8f4f4;;
+}
+.downloaditem{
+
+    padding: 25px 35px;
+    border-radius: 50px;
+    color: black;
+    margin: 20px 0px;
+    width: 500px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.activeitem{
+    background-color: #3e3e52;
+    color: white;
+
+
+}
+.downloaditem span{
+    color: goldenrod;
+}
+.text-primary1{
+    color: #465986;
+    font-weight: bold;
+}
+.trainlast{
+    display: flex;
+    width: 100vw;
+    margin-top: 80px;
+    background-color: #1b2230;
+    color: white !important;
+    justify-content: space-evenly;
+}
+.trainlast a{
+    color: white !important;
+}

@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Bus Tickets Online, Easy</title>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+        integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+        integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" type="image/png" sizes="16x16" href="img/img01.svg">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="goto"><a href="#top-to"><i class="fa-solid fa-arrow-up"></i></a></div>
+    <header>
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body position-fixed l-0 container-fluid top-0 ">
+            <div class="container-fluid px-5">
+                <a class="navbar-brand mx-5" href="#"><img src="img/img01.svg" alt=""></a>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-5">
+                        <li class="nav-item bg-danger rounded mx4">
+                            <a class="nav-link active text-light pt-3 px-3" aria-current="page" href="#"><img src="img/img02.svg"
+                                    alt="" class="d-block mx-auto"> Bus Ticket</a>
+                        </li>
+                        <li class="nav-item mx-3 b-dark">
+                            <a class="nav-link active" href="train.html"><img src="img/img03.svg" alt=""
+                                    class="d-block mx-auto ">Train Tickets</a>
+                        </li>
+
+                    </ul>
+                    <div class="d-flex " style="font-size: 20px;">
+                        <a href="#" class="mx-4 b-dark"><i class="fa-solid fa-headset px-3 "></i>Help</a>
+                        <a href="#" class="mx-4 b-dark"><i class="fa-regular fa-user px-3"></i>Account</a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div class=" hero justify-content-center align-items-center d-flex">
+
+
+        <form class="d-flex justify-content-center align-items-center ">
+            <div class="form">
+                <div><img src="img/busin.jpeg" alt="" id="top-to"></div>
+                <div><input type="text" placeholder="From"></div>
+                <div class="formfloat">
+                    <i class="fa-solid fa-arrow-right-arrow-left arr"></i>
+                    <img src="img/busin.jpeg" alt="">
+                </div>
+                <div><input type="text" placeholder="To"></div>
+                <div><label for=""><i class="fa-solid fa-calendar-days"></i></label></div>
+                <div><input type="date" id="date" placeholder="26 Jan"></div>
+                <button type="submit" class="btn form-control btn-danger px-4" id="busbtn">SEARCH BUSES</button>
+            </div>
+
+        </form>
+
+    </div>
+    <div class="slider w-75 mx-auto position-relative">
+        <div class=" heroslide position-absolute bg-light  d-flex flex-column align-items-center ">
+            <div class="d-flex justify-content-between p-4 px-5 w-100 ">
+                <h2>TRENDING OFFERS</h2>
+                <button class="text-primary px-4 rounded-pill border border-secondary">View All</button>
+            </div>
+            <div class="multiple-items d-flex align-items-center justify-content-evenly cards">
+
+                <div class="d-flex bg-warning  card11">
+
+                    <div><img class="rounded-pill my-4" src="img/img08.png" alt="">
+                    </div>
+
+                    <div class="px-3">
+                        <div class="text-light bus">bus</div>
+                        <h6>Save up to Rs 250 on bus tickets</h6>
+                        <p>valid till 01 June</p>
+                        <div class="d-flex">
+                            <div class="firstcpn py-1 px-2 rounded-3 me-3">First</div>
+                            <div class="copy"><i class="fa-regular fa-copy"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex bg-danger  card11">
+
+                    <div><img class="rounded-pill my-4" src="img/img09.png" alt="">
+                    </div>
+
+                    <div class="px-3">
+                        <div class="text-light bus">bus</div>
+                        <h6>Save up to Rs 250 on bus tickets</h6>
+                        <p>valid till 01 June</p>
+                        <div class="d-flex">
+                            <div class="firstcpn py-1 px-2 rounded-3 me-3">First</div>
+                            <div class="copy"><i class="fa-regular fa-copy"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex bg-primary  card11">
+
+                    <div><img class="rounded-pill my-4" src="img/img07.png" alt="">
+                    </div>
+
+                    <div class="px-3">
+                        <div class="text-light bus">bus</div>
+                        <h6>Save up to Rs 250 on bus tickets</h6>
+                        <p>valid till 01 June</p>
+                        <div class="d-flex">
+                            <div class="firstcpn py-1 px-2 rounded-3 me-3">First</div>
+                            <div class="copy"><i class="fa-regular fa-copy"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="d-flex bg-secondary  card11">
+
+                    <div><img class="rounded-pill my-4" src="img/img09.png" alt="">
+                    </div>
+
+                    <div class="px-3">
+                        <div class="text-light bus">bus</div>
+                        <h6>Save up to Rs 250 on bus tickets</h6>
+                        <p>valid till 01 June</p>
+                        <div class="d-flex">
+                            <div class="firstcpn py-1 px-2 rounded-3 me-3">First</div>
+                            <div class="copy"><i class="fa-regular fa-copy"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex bg-primary  card11">
+
+                    <div><img class="rounded-pill my-4" src="img/img08.png" alt="">
+                    </div>
+
+                    <div class="px-3">
+                        <div class="text-light bus">bus</div>
+                        <h6>Save up to Rs 250 on bus tickets</h6>
+                        <p>valid till 01 June</p>
+                        <div class="d-flex">
+                            <div class="firstcpn py-1 px-2 rounded-3 me-3">First</div>
+                            <div class="copy"><i class="fa-regular fa-copy"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="d-flex bg-danger  card11">
+
+                    <div><img class="rounded-pill my-4" src="img/img07.png" alt="">
+                    </div>
+
+                    <div class="px-3">
+                        <div class="text-light bus">bus</div>
+                        <h6>Save up to Rs 250 on bus tickets</h6>
+                        <p>valid till 01 June</p>
+                        <div class="d-flex">
+                            <div class="firstcpn py-1 px-2 rounded-3 me-3">First</div>
+                            <div class="copy"><i class="fa-regular fa-copy"></i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <div class="sponsher w-75 mx-auto mt-5 position-relative "><a href="#"><img class="w-100 rounded-more"
+                src="img/img10.jpeg" alt=""></a>
+        <img src="img/img11.png" alt="" class="sponshertxt">
+    </div>
+
+
+    <div class="slider1 w-75 mx-auto position-relative">
+        <div class=" heroslide1 position-absolute d-flex flex-column align-items-center ">
+            <div class="d-flex justify-content-between p-4 px-5 w-100 ">
+                <h2>GOVERNMENT BUSES</h2>
+                <button class="text-primary px-4 rounded-pill border border-secondary">View All</button>
+            </div>
+            <div class="multiple-items d-flex align-items-center justify-content-evenly cards">
+
+                <div class="card11 shadow text-dark">
+                    <div class="d-flex justify-content-evenly">
+                        <div><img class="rounded-pill my-4" src="img/img13.png" alt="">
+                        </div>
+                        <div>
+                            <div class="d-flex mt-4">
+                                <h4>RSRTC</h4>
+                                <h4><span class="badge bg-success ms-3"><i class="fa-solid fa-star"></i> 3.71</span>
+                                </h4>
+                            </div>
+                            <div>
+                                <p>राजस्थान स्टेट रोड ट्रांसपोर्ट कॉर्पोरशन</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="text-center px-3">6000 services including Deluxe, Ordinary and more</p>
+
+                        <p class="govpara d-flex justify-content-evenly rounded-more p-1"> <img src="img/img01.svg"
+                                alt="" height="20px">Official booking partner of RSRTC</p>
+                    </div>
+
+                </div>
+
+                <div class="card11 shadow text-dark">
+                    <div class="d-flex justify-content-evenly">
+                        <div><img class="rounded-pill my-4" src="img/img15.png" alt="">
+                        </div>
+                        <div>
+                            <div class="d-flex mt-4">
+                                <h4>UPSRTC</h4>
+                                <h4><span class="badge bg-success ms-3"><i class="fa-solid fa-star"></i> 3.94</span>
+                                </h4>
+                            </div>
+                            <div>
+                                <p>उत्तर प्रदेश राज्य सड़क परिवहन निगम</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="text-center px-3">1738 services including Janrath,Shatabdi and more</p>
+
+                        <p class="govpara d-flex justify-content-evenly rounded-more p-1"> <img src="img/img01.svg"
+                                alt="" height="20px">Official booking partner of UPSRTC</p>
+                    </div>
+
+                </div>
+                <div class="card11 shadow text-dark">
+                    <div class="d-flex justify-content-evenly">
+                        <div><img class="rounded-pill my-4" src="img/img16.jpg" width="60px" alt="">
+                        </div>
+                        <div>
+                            <div class="d-flex mt-4">
+                                <h4>HRTC</h4>
+                                <h4><span class="badge bg-success ms-3"><i class="fa-solid fa-star"></i> 3.98</span>
+                                </h4>
+                            </div>
+                            <div>
+                                <p>हिमाचल रोड ट्रान्सपोर्ट कॉर्पोरेशन</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="text-center px-3">480 services including Himgaurav, Himmani and more</p>
+
+                        <p class="govpara d-flex justify-content-evenly rounded-more p-1"> <img src="img/img01.svg"
+                                alt="" height="20px">Official booking partner of HRTC</p>
+                    </div>
+
+                </div>
+                <div class="card11 shadow text-dark">
+                    <div class="d-flex justify-content-evenly">
+                        <div><img class="rounded-pill my-4" src="img/img17.png" height="60px" alt="">
+                        </div>
+                        <div>
+                            <div class="d-flex mt-4">
+                                <h4>CTU RTC</h4>
+                                <h4><span class="badge bg-success ms-3"><i class="fa-solid fa-star"></i> 3.85</span>
+                                </h4>
+                            </div>
+                            <div>
+                                <p>चंडीगढ़ परिवहन उपक्रम</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="text-center px-3">143 services including AC & Non AC Bus and more</p>
+
+                        <p class="govpara d-flex justify-content-evenly rounded-more p-1"> <img src="img/img01.svg"
+                                alt="" height="20px">Official booking partner of CTU</p>
+                    </div>
+
+                </div>
+                <div class="card11 shadow text-dark">
+                    <div class="d-flex justify-content-evenly">
+                        <div><img class="rounded-pill my-4" src="img/img18.png" width="60px" alt="">
+                        </div>
+                        <div>
+                            <div class="d-flex mt-4">
+                                <h4>APSRTC</h4>
+                                <h4><span class="badge bg-success ms-3"><i class="fa-solid fa-star"></i> 3.85</span>
+                                </h4>
+                            </div>
+                            <div>
+                                <p>ఆంధ్రప్రదేశ్ రాష్ట్ర రోడ్డు రవాణా సంస్థ</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="text-center px-3">1539 services including Garuda, Garuda Plus and more</p>
+
+                        <p class="govpara d-flex justify-content-evenly rounded-more p-1"> <img src="img/img01.svg"
+                                alt="" height="20px">Official booking partner of APSRTC</p>
+                    </div>
+
+                </div>
+                <div class="card11 shadow text-dark">
+                    <div class="d-flex justify-content-evenly">
+                        <div><img class="rounded-pill my-4" src="img/img19.jpg" height="60px" alt="">
+                        </div>
+                        <div>
+                            <div class="d-flex mt-4">
+                                <h4>BSRTC</h4>
+                                <h4><span class="badge bg-success ms-3"><i class="fa-solid fa-star"></i> 3.91</span>
+                                </h4>
+                            </div>
+                            <div>
+                                <p>बिहार राज्य रोड ट्रान्सपोर्ट कॉर्पोरेशन</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <p class="text-center px-3">220 services including Volvo Bus, AC & Non AC Bus and more</p>
+
+                        <p class="govpara d-flex justify-content-evenly rounded-more p-1"> <img src="img/img01.svg"
+                                alt="" height="20px">Official booking partner of BSRTC</p>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="w-75 mx-auto d-flex trainbox">
+        <div class="w-50">
+            <div class="bigtxt">NOW, <span>GET MORE THAN JUST BUS </span>TICKETS WITH REDBUS!</div>
+            <div class="text-center w-50 border-bottom border-3 border-danger py-3 text-danger"><img src="img/img31.svg"
+                    width="80px" alt=""><span class="fw-bold"> Train Ticket </span></div>
+            <p class="text-dark mt-4">Book IRCTC Train Tickets on redRail simple & superfast booking process with no
+                service fee + no payment gateway charge.</p>
+            <div class="my-4 fw-bold"><img class="me-4" src="img/img32.svg" alt="">Authorised IRCTC Partne</div>
+            <div class="my-4 fw-bold"><img class="me-4" src="img/img33.svg" alt="">Instant refunds on UPI payments</div>
+            <div class="my-4 fw-bold"><img class="me-4" src="img/img34.svg" alt="">Hassle- free customer support</div>
+            <button class="text-light p-3 bg-danger border-0 fw-bold rounded-more">Book Train Ticket <i
+                    class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <div class="trainimg w-50"><img width="100%" ,height="100% " style="padding-right:30px " src="img/img36.svg"
+                alt=""></div>
+    </div>
+    <div class="app w-75 mx-auto p-4">
+        <div>
+            <div class="bigtxt text-light ">ENJOY THE APP!</div>
+        </div>
+        <div class="d-flex">
+            <div class="rounded-more bg-light p-4 playstore">
+                <div class="d-flex ">
+                    <div
+                        class="rounded-pill text-light bg-success tick d-flex align-items-center justify-content-center me-3">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div>Quick access</div>
+                </div>
+                <div class="d-flex my-4">
+                    <div
+                        class="rounded-pill text-light bg-success tick d-flex align-items-center justify-content-center me-3">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <div>Superior live tracking</div>
+                </div>
+                <div class="d-flex justify-content-evenly">
+                    <div class="border-end border-3 border-secondary pe-3">
+                        <h3>4.6 <i class="fa-solid fa-star fs-6"></i></h3>
+                        <p>50M+ downloads</p>
+                        <p class="fw-bold">Play Store</p>
+                    </div>
+                    <div>
+                        <h3>4.6 <i class="fa-solid fa-star fs-6"></i></h3>
+                        <p>50M+ downloads</p>
+                        <p class="fw-bold">Applr Store</p>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="ps-3 qr text-center">
+                <h4 class="text-light px-5">Scan to download</h4>
+                <img src="img/img39.svg" alt="">
+            </div>
+            <div class=" qr text-center">
+                <h4 class="text-light px-2">Download the App on</h4>
+
+                <a href="#"><img src="img/img41.svg" alt=""></a>
+                <a href="#"><img src="img/img40.svg" alt="" class="my-3"></a>
+            </div>
+        </div>
+
+    </div>
+    <div class="w-75 mx-auto redbuslabel position-relative">
+        <div class="labelright">
+            <div class="d-flex ">
+                <div><i class="fa-regular fa-clock"></i></div>
+                <div class="promo-txt">
+                    <h3>On Time
+                    </h3>
+                    <p>Punctual arrivals on 95% trips</p>
+                </div>
+            </div>
+            <div class="d-flex promoflex ">
+                <div><i class="fa-solid fa-hands-praying"></i></div>
+                <div class="promo-txt">
+                    <h3>Friendly Staff</h3>
+                    <p>Always ready to help
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex promoflex">
+                <div><i class="fa-regular fa-star"></i></div>
+                <div class="promo-txt">
+                    <h3>Top Rated
+                    </h3>
+                    <p>Buses with 4+ star rating
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="country w-75 mx-auto">
+        <h1>GLOBAL PRESENCE</h1>
+        <div class="d-flex w-100 justify-content-between my-5">
+            <div class="contname"><img src="img/img43.svg" alt="">
+                <h3 class="py-2 text-center rounded-pill ">Colombia</h3>
+            </div>
+            <div class="contname"><img src="img/img44.svg" alt="">
+                <h3 class="py-2 px-4 rounded-pill text-center">India</h3>
+            </div>
+            <div class="contname"><img src="img/img45.svg" alt="">
+                <h3 class="py-2 px-4 rounded-pill text-center">Indonesia</h3>
+            </div>
+            <div class="contname"><img src="img/img46.svg" alt="">
+                <h3 class="py-2 px-4 rounded-pill text-center">Malaysia</h3>
+            </div>
+            <div class="contname"><img src="img/img47.svg" alt="">
+                <h3 class="py-2 px-4 rounded-pill text-center">Peru</h3>
+            </div>
+            <div class="contname"><img src="img/img48.svg" alt="">
+                <h3 class="py-2 px-4 rounded-pill text-center">Singapur</h3>
+            </div>
+        </div>
+    </div>
+    <div class="w-75 mx-auto">
+        <div class="bigtxt ">BOOK BUS TICKETS ONLINE</div>
+        <p>redBus is India's largest brand for online bus ticket booking and offers an easy-to-use online bus ticket
+            booking service and train; with over 36 million satisfied customers, 3500+ bus operators to choose from, and
+            plenty of offers on bus ticket booking, redBus makes road journeys super convenient for travellers. A
+            leading platform for booking bus tickets, redBus has been the leader in online bus booking over the past 17
+            years across thousands of cities and lakhs of routes in India.</p>
+        <br>
+        <p>Booking a bus ticket online on the redBus app or website is very simple. You can download the redBus app or
+            visit redbus.in and enter your source, destination & travel date to check the top-rated bus services
+            available. You can then compare bus prices, user ratings & amenities, select your preferred seat, boarding &
+            dropping points and pay using multiple payment options like UPI, debit or credit card, net banking and more.
+            With redBus, get assured safe & secure payment methods and guaranteed travel with the best seat and bus
+            operator of your choice. ... <a href="#">Read more</a></p>
+        <br><br>
+        <div class="bigtxt">Bus Booking redDeals on redBus</div>
+        <p>Don't miss out on these incredible offers, book your bus tickets now and travel with convenience and
+            affordability. Hurry, grab the best bus booking deals before they're gone!</p>
+        <div
+            class="w-100  border border-secondary p-5 rounded-more booknow d-flex align-items-center justify-content-evenly mb-5">
+            <div><img src="img/img01.svg" alt=""></div>
+            <div>
+                <h2>Unlock Unbeatable Exclusive redDeals! <span class="text-danger">20% OFF</span></h2>
+                <p><span class="text-danger fw-bold">3304</span> Deals |<span class="text-danger fw-bold">1424</span>
+                    Bus Operators | <span class="text-danger fw-bold">150400</span> Routes</p>
+            </div>
+            <div>
+                <button class="btn py-3 px-4 ms-6 bg-danger rounded-more text-light">Book now</button>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="w-100 footer p-5 ">
+        <div class="accordian mx-5 ">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Popular Bus Routes
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="seoLinkSection">
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/delhi-to-manali" target="_blank">Delhi
+                                        To Manali Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/delhi-to-rishikesh"
+                                        target="_blank">Delhi To Rishikesh Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/delhi-to-shimla" target="_blank">Delhi
+                                        To Shimla Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/delhi-to-nainital" target="_blank">Delhi
+                                        To Nainital Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/delhi-to-katra" target="_blank">Delhi To
+                                        Katra Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/bangalore-to-goa"
+                                        target="_blank">Bangalore To Goa Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/bangalore-to-hyderabad"
+                                        target="_blank">Bangalore To Hyderabad Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/bangalore-to-tirupathi"
+                                        target="_blank">Bangalore To Tirupathi Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/bangalore-to-chennai"
+                                        target="_blank">Bangalore To Chennai Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/bangalore-to-pondicherry"
+                                        target="_blank">Bangalore To Pondicherry Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/hyderabad-to-bangalore"
+                                        target="_blank">Hyderabad To Bangalore Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/hyderabad-to-goa"
+                                        target="_blank">Hyderabad To Goa Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/hyderabad-to-srisailam"
+                                        target="_blank">Hyderabad To Srisailam Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/hyderabad-to-vijayawada"
+                                        target="_blank">Hyderabad To Vijayawada Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/hyderabad-to-tirupathi"
+                                        target="_blank">Hyderabad To Tirupathi Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/pune-to-goa" target="_blank">Pune To Goa
+                                        Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/pune-to-mumbai" target="_blank">Pune To
+                                        Mumbai Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/pune-to-nagpur" target="_blank">Pune To
+                                        Nagpur Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/pune-to-kolhapur-maharashtra"
+                                        target="_blank">Pune To Kolhapur Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/pune-to-nashik" target="_blank">Pune To
+                                        Nashik Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/mumbai-to-goa" target="_blank">Mumbai To
+                                        Goa Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/mumbai-to-pune" target="_blank">Mumbai
+                                        To Pune Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/mumbai-to-shirdi" target="_blank">Mumbai
+                                        To Shirdi Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/mumbai-to-mahabaleshwar"
+                                        target="_blank">Mumbai To Mahabaleshwar Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/mumbai-to-kolhapur-maharashtra"
+                                        target="_blank">Mumbai To Kolhapur Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/kolkata-to-digha"
+                                        target="_blank">Kolkata To Digha Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/kolkata-to-siliguri"
+                                        target="_blank">Kolkata To Siliguri Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/kolkata-to-puri" target="_blank">Kolkata
+                                        To Puri Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/kolkata-to-bakkhali"
+                                        target="_blank">Kolkata To Bakkhali Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/kolkata-to-mandarmani"
+                                        target="_blank">Kolkata To Mandarmani Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/chennai-to-bangalore"
+                                        target="_blank">Chennai To Bangalore Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/chennai-to-pondicherry"
+                                        target="_blank">Chennai To Pondicherry Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/chennai-to-coimbatore"
+                                        target="_blank">Chennai To Coimbatore Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/chennai-to-madurai"
+                                        target="_blank">Chennai To Madurai Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/chennai-to-tirupathi"
+                                        target="_blank">Chennai To Tirupathi Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/chandigarh-to-manali"
+                                        target="_blank">Chandigarh To Manali Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/chandigarh-to-shimla"
+                                        target="_blank">Chandigarh To Shimla Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/chandigarh-to-delhi"
+                                        target="_blank">Chandigarh To Delhi Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/chandigarh-to-dehradun"
+                                        target="_blank">Chandigarh To Dehradun Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/chandigarh-to-amritsar"
+                                        target="_blank">Chandigarh To Amritsar Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/coimbatore-to-chennai"
+                                        target="_blank">Coimbatore To Chennai Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/coimbatore-to-bangalore"
+                                        target="_blank">Coimbatore To Bangalore Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/coimbatore-to-ooty"
+                                        target="_blank">Coimbatore To Ooty Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/coimbatore-to-tiruchendur"
+                                        target="_blank">Coimbatore To Tiruchendur Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/coimbatore-to-madurai"
+                                        target="_blank">Coimbatore To Madurai Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/agra-to-bareilly" target="_blank">Agra
+                                        to Bareilly Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/hisar-to-chandigarh"
+                                        target="_blank">Hisar to Chandigarh Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/hisar-to-delhi" target="_blank">Hisar to
+                                        Delhi Bus </a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/lucknow-to-ballia"
+                                        target="_blank">Lucknow to Ballia Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/lucknow-to-moradabad"
+                                        target="_blank">Lucknow to Moradabad Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/rajkot-to-dwarka" target="_blank">Rajkot
+                                        to Dwarka Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/siliguri-to-gangtok"
+                                        target="_blank">Siliguri to Gangtok Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/ahmedabad-to-goa"
+                                        target="_blank">Ahmedabad to Goa Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/ahmedabad-to-kanpur"
+                                        target="_blank">Ahmedabad to Kanpur Bus</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/bus-tickets/akola-to-pune" target="_blank">Akola to
+                                        Pune Bus</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Popular cities
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="seoLinkSection">
+                                <span><a class="footer_seo_link footer_link_new" href="buses/hyderabad-bus-tickets"
+                                        target="_blank">Hyderabad Bus Tickets</a></span>
+                                <span><a class="footer_seo_link footer_link_new" href="buses/bangalore-bus-tickets"
+                                        target="_blank">Bangalore Bus Tickets</a></span>
+                                <span><a class="footer_seo_link footer_link_new" href="buses/chennai-bus-tickets"
+                                        target="_blank">Chennai Bus Tickets</a></span>
+                                <span><a class="footer_seo_link footer_link_new" href="buses/pune-bus-tickets"
+                                        target="_blank">Pune Bus Tickets</a></span>
+                                <span><a class="footer_seo_link footer_link_new" href="buses/delhi-bus-tickets"
+                                        target="_blank">Delhi Bus Tickets </a></span>
+                                <span><a class="footer_seo_link footer_link_new" href="buses/mumbai-bus-tickets"
+                                        target="_blank">Mumbai Bus Tickets</a></span>
+                                <span><a class="footer_seo_link footer_link_new" href="buses/kolkata-bus-tickets"
+                                        target="_blank">Kolkata Bus Tickets</a></span>
+                                <span><a class="footer_seo_link footer_link_new" href="buses/ernakulam-bus-tickets"
+                                        target="_blank">Ernakulam Bus Tickets</a></span>
+                                <span><a class="footer_seo_link footer_link_new" href="buses/ahmedabad-bus-tickets"
+                                        target="_blank">Ahmedabad Bus Tickets</a></span>
+                                <span><a class="footer_seo_link footer_link_new" href="buses/vijayawada-bus-tickets"
+                                        target="_blank">Vijayawada Bus Tickets</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Popular Bus Operators
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="seoLinkSection">
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/no-1-air-travels" target="_blank">No 1 Air
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/ybm-travels" target="_blank">YBM
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/sri-sms-travels" target="_blank">Sri SMS
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/svkdt-travels" target="_blank">Svkdt
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/rkt-tours-and-travels" target="_blank">RKT
+                                        Tours and Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/royal-cars" target="_blank">Royal
+                                        Cars</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/rahul-travels" target="_blank">Rahul
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/jbt-travels" target="_blank">JBT
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/raj-express-1" target="_blank">Raj
+                                        Express</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/vaishali-express" target="_blank">Vaishali
+                                        Express</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/rahul-travels-indore" target="_blank">Rahul
+                                        Travels Indore</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/delhi-tours-and-travels"
+                                        target="_blank">Delhi Tours And Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/ashok-travels-delhi" target="_blank">Ashok
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/greenline" target="_blank">Greenline
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/pawan-travels-balaghat"
+                                        target="_blank">Pawan Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/ravi-travels" target="_blank">Ravi
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/vrl-travels" target="_blank">VRL
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/dolphin-travel-house"
+                                        target="_blank">Dolphin Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/ganesh-travels" target="_blank">Ganesh
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/kaveri-kamakshi-travels"
+                                        target="_blank">Kaveri Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/national-travels-national"
+                                        target="_blank">National Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/bharathi-travels-bharathi"
+                                        target="_blank">Bharathi Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/city-land-travels" target="_blank">City Land
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/citylink-travels" target="_blank">Citylink
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/kkaveri-travels" target="_blank">KKaveri
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/kk-travels" target="_blank">KK
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/mahadev-travels-online"
+                                        target="_blank">Mahadev Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/maharaja-travels-1" target="_blank">Maharaja
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/m-r-travels" target="_blank">M R
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/new-payal-travels" target="_blank">New Payal
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/paras-travels" target="_blank">Paras
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/parshwanath-travels-parshwanath-ahmedabad"
+                                        target="_blank">Shree Parshwanath Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/payal-travels" target="_blank">Payal
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/rk-travels" target="_blank">R K
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/shivam-travels" target="_blank">Shivam
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/shree-mahaveer-travels-9721"
+                                        target="_blank">Shree Mahaveer Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/srs-travels-srs" target="_blank">SRS
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/tulsi-travels" target="_blank">Tulsi
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/vaibhav-travels-10044"
+                                        target="_blank">Vaibhav Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/vikas-travels-jaipur" target="_blank">Vikas
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/amarnath-travels-9984"
+                                        target="_blank">Amarnath Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/anand-travel" target="_blank">Anand
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/ashapura-travels" target="_blank">Ashapura
+                                        Travels</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/ashok-bus-service" target="_blank">Ashok Bus
+                                        Service</a></span>
+                                <span><a class="footer_seo_link footer_link_new"
+                                        href="https://www.redbus.in/travels/ashoka-travels" target="_blank">Ashoka
+                                        Travels</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5 border-bottom">
+                <div class="col-3"><img src="img/img01.svg" alt="">
+                    <p>redBus is the world's largest online bus ticket booking service trusted by over 25 million happy
+                        customers globally. redBus offers bus ticket booking through its website, iOS and Android mobile
+                        apps for all major routes.</p>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#">
+                                <h4 class="fw-bold text-dark fs-5">About redBus</h4>
+                            </a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Investor Relations</a></li>
+                        <li><a href="#">Contact us</a></li>
+                        <li><a href="#">Mobile version</a></li>
+                        <li><a href="#">redBus on mobile</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                        <li><a href="#">Offers</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Values</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#">
+                                <h4 class="fw-bold text-dark fs-5">Info</h4>
+                            </a></li>
+                        <li><a href="#">T&C</a></li>
+                        <li><a href="#">Privacy policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Bus operator registration</a></li>
+                        <li><a href="#">Agent registration</a></li>
+                        <li><a href="#">Insurance partner</a></li>
+                        <li><a href="#">Values</a></li>
+                        <li><a href="#">Primo Bus</a></li>
+                        <li><a href="#">Bus Timetables</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#">
+                                <h4 class="fw-bold text-dark fs-5">Global Sites</h4>
+                            </a></li>
+                        <li><a href="#">India</a></li>
+                        <li><a href="#">Singapore</a></li>
+                        <li><a href="#">Malaysia</a></li>
+                        <li><a href="#">Indonesia</a></li>
+                        <li><a href="#">Peru</a></li>
+                        <li><a href="#">Colombia</a></li>
+                        <li><a href="#">Cambodia</a></li>
+                        <li><a href="#">Vietnam</a></li>
+
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="#">
+                                <h4 class="fw-bold text-dark fs-5">Our Partnerss</h4>
+                            </a></li>
+                        <li><a href="#">Goibibo Bus</a></li>
+                        <li><a href="#">Goibibo Hotels</a></li>
+                        <li><a href="#">Makemytrip Hotelss</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="d-flex align-items-center justify-content-between mt-4">
+                <div>Ⓒ 2024 Redbus India Pvt Ltd. All rights reserved</div>
+                <div class="w-25 d-flex justify-content-evenly fs-5 ">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.4.1/jquery-migrate.min.js"
+        integrity="sha512-KgffulL3mxrOsDicgQWA11O6q6oKeWcV00VxgfJw4TcM8XRQT8Df9EsrYxDf7tpVpfl3qcYD96BpyPvA4d1FDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script>
+        $('.multiple-items').slick({
+            infinite: false,
+            slidesToShow: 3,
+            slidesToScroll: 3
+        });
+
+
+    </script>
+
+
+</body>
+
+</html>
